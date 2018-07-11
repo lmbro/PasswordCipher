@@ -58,7 +58,7 @@ class PasswordCipher(tk.Tk):
         method = self.method.get()
 
         if method == VIGENERE:
-            ciphertext = Cipher.vigenere(self.plaintext, self.key)
+            ciphertext = Cipher.vigenere(self.plaintext.get(), self.key.get())
 
         self.ciphertext.set(ciphertext)
 
